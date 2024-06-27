@@ -2,7 +2,6 @@
 date: '2'
 title: 'Mayfair Design Studio'
 cover: './mayfair.png'
-# github: 'https://github.com/bchiang7/halcyon-site'
 external: 'https://www.mayfairdesignstudio.ng/'
 tech:
   - VS Code
