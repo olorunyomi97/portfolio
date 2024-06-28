@@ -2,7 +2,6 @@
 date: '3'
 title: 'Artgidi'
 cover: './artgidi.png'
-# github: 'https://github.com/bchiang7/halcyon-site'
 external: 'https://artgidi.com/'
 tech:
   - VS Code
