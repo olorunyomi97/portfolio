@@ -9,4 +9,4 @@ tech:
     - ReactJS
 ---
 
-An ecosystem where Artists can thrive and also where Art Lovers can get a piece of unique creativity.
+An ecosystem where Artists can thrive and also where, Art Lovers can get a piece of unique creativity.
