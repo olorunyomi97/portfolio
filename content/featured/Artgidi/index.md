@@ -1,5 +1,5 @@
 ---
-date: '3'
+date: '4'
 title: 'Artgidi'
 cover: './artgidi.png'
 external: 'https://artgidi.com/'

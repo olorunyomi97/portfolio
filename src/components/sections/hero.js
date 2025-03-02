@@ -5,45 +5,45 @@ import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledHeroSection = styled.section`
-  ${({ theme }) => theme.mixins.flexCenter};
-  flex-direction: column;
-  align-items: flex-start;
-  min-height: 100vh;
-  height: 100vh;
-  padding: 0;
+	${({ theme }) => theme.mixins.flexCenter};
+	flex-direction: column;
+	align-items: flex-start;
+	min-height: 100vh;
+	height: 100vh;
+	padding: 0;
 
-  @media (max-height: 700px) and (min-width: 700px), (max-width: 360px) {
-    height: auto;
-    padding-top: var(--nav-height);
-  }
+	@media (max-height: 700px) and (min-width: 700px), (max-width: 360px) {
+		height: auto;
+		padding-top: var(--nav-height);
+	}
 
-  h1 {
-    margin: 0 0 30px 4px;
-    color: var(--green);
-    font-family: var(--font-mono);
-    font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
-    font-weight: 400;
+	h1 {
+		margin: 0 0 30px 4px;
+		color: var(--green);
+		font-family: var(--font-mono);
+		font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
+		font-weight: 400;
 
-    @media (max-width: 480px) {
-      margin: 0 0 20px 2px;
-    }
-  }
+		@media (max-width: 480px) {
+			margin: 0 0 20px 2px;
+		}
+	}
 
-  h3 {
-    margin-top: 5px;
-    color: var(--slate);
-    line-height: 0.9;
-  }
+	h3 {
+		margin-top: 5px;
+		color: var(--slate);
+		line-height: 0.9;
+	}
 
-  p {
-    margin: 20px 0 0;
-    max-width: 540px;
-  }
+	p {
+		margin: 20px 0 0;
+		max-width: 540px;
+	}
 
-  .email-link {
-    ${({ theme }) => theme.mixins.bigButton};
-    margin-top: 50px;
-  }
+	.email-link {
+		${({ theme }) => theme.mixins.bigButton};
+		margin-top: 50px;
+	}
 `;
 
 const Hero = () => {
@@ -65,20 +65,25 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I’m a software engineer specializing in building (and designing occasionally) exceptional
-        digital and functional experiences. Currently, I’m focused on building west africa's first
-        digital freight forward managwment at{' '}
-        <a href="https://www.oneport365.com/" target="_blank" rel="noreferrer">
-          OnePort 365
+				I’m a software engineer specializing in building (and designing occasionally)
+				exceptional digital and functional experiences. Currently, I’m focused on developing
+				and maintaining company’s website to improve user experience, product visibility and
+				customer engagement{' '}
+        <a href="https://nylene.com/" target="_blank" rel="noreferrer">
+					Nylene Canada ULC
         </a>
-        .
+				.
       </p>
     </>
   );
 
   const five = (
-    <a className="email-link" href="mailto:olorunyomi97@gmail.com" target="_blank" rel="noreferrer">
-      Get in touch with me!
+    <a
+      className="email-link"
+      href="mailto:olorunyomi97@gmail.com"
+      target="_blank"
+      rel="noreferrer">
+			Get in touch with me!
     </a>
   );
 
@@ -95,11 +100,11 @@ const Hero = () => {
       ) : (
         <TransitionGroup component={null}>
           {isMounted &&
-            items.map((item, i) => (
-              <CSSTransition key={i} classNames="fadeup" timeout={loaderDelay}>
-                <div style={{ transitionDelay: `${i + 1}00ms` }}>{item}</div>
-              </CSSTransition>
-            ))}
+						items.map((item, i) => (
+						  <CSSTransition key={i} classNames="fadeup" timeout={loaderDelay}>
+						    <div style={{ transitionDelay: `${i + 1}00ms` }}>{item}</div>
+						  </CSSTransition>
+						))}
         </TransitionGroup>
       )}
     </StyledHeroSection>

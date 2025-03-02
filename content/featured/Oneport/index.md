@@ -1,14 +1,14 @@
 ---
-date: '1'
+date: '2'
 title: 'OnePort 365'
 cover: './oneport.png'
 external: 'https://www.oneport365.com/'
 cta: 'https://www.oneport365.com/'
 tech:
-  - TypeScript
-  - React
-  - ExpressJS
-  - Tailwind CSS
+    - TypeScript
+    - React
+    - ExpressJS
+    - Tailwind CSS
 ---
 
 Oneport365, Connecting Businesses to the World with Seamless Logistics.
